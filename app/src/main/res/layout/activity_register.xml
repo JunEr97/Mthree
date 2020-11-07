@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#070707"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context=".Register">
+
+
+        <Button
+            android:id="@+id/btn_signup"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/transparent_bg_bordered_button"
+            android:text="Create Account"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.471"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cb_agree" />
+
+
+        <CheckBox
+            android:id="@+id/cb_agree"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/AgreeStatement"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etdepartment" />
+
+        <EditText
+            android:id="@+id/etphoneno"
+            android:layout_width="340dp"
+            android:layout_height="40dp"
+            android:background="@android:color/white"
+            android:ems="10"
+            android:hint=" Enter contact no."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvno" />
+
+        <vn.tiki.widgets.AutoCompleteEmailEditText
+            android:id="@+id/etemail"
+            android:layout_width="340dp"
+            android:layout_height="40dp"
+            android:background="@android:color/white"
+            android:ems="10"
+            android:hint=" Enter email"
+            android:inputType="textEmailAddress"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvemail"
+            app:domains="@array/domains"/>
+
+
+        <EditText
+            android:id="@+id/etdepartment"
+            android:layout_width="340dp"
+            android:layout_height="40dp"
+            android:background="@android:color/white"
+            android:ems="10"
+            android:hint=" Enter your department"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvdepartment" />
+
+        <EditText
+            android:id="@+id/etcpass"
+            android:layout_width="340dp"
+            android:layout_height="40dp"
+            android:background="@android:color/white"
+            android:ems="10"
+            android:hint=" Retype password"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvcpass" />
+
+
+        <EditText
+            android:id="@+id/etname"
+            android:layout_width="340dp"
+            android:layout_height="40dp"
+            android:background="@android:color/white"
+            android:ems="10"
+            android:hint=" Enter your name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvname" />
+
+        <EditText
+            android:id="@+id/etemployeeid"
+            android:layout_width="340dp"
+            android:layout_height="40dp"
+            android:background="@android:color/white"
+            android:ems="10"
+            android:hint=" Enter your employee ID"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.485"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvemployeeid" />
+
+        <EditText
+            android:id="@+id/etpass"
+            android:layout_width="340dp"
+            android:layout_height="40dp"
+            android:background="@android:color/white"
+            android:ems="10"
+            android:hint=" Enter password"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvpass" />
+
+
+        <TextView
+            android:id="@+id/tvno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Phone Number"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/etphoneno"
+            app:layout_constraintTop_toBottomOf="@+id/etemail" />
+
+        <TextView
+            android:id="@+id/tvdepartment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Department"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/etdepartment"
+            app:layout_constraintTop_toBottomOf="@+id/etphoneno" />
+
+        <TextView
+            android:id="@+id/tvemail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Email Address"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/tvno"
+            app:layout_constraintTop_toBottomOf="@+id/etcpass" />
+
+        <TextView
+            android:id="@+id/tvemployeeid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Employee ID"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/tvname"
+            app:layout_constraintTop_toBottomOf="@+id/etname" />
+
+        <TextView
+            android:id="@+id/tvpass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Password"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/tvcpass"
+            app:layout_constraintTop_toBottomOf="@+id/etemployeeid" />
+
+        <TextView
+            android:id="@+id/tvname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:text="Full Name"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/etname"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+        <TextView
+            android:id="@+id/tvcpass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Confirm Password"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/tvemail"
+            app:layout_constraintTop_toBottomOf="@+id/etpass" />
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="420dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:fadeScrollbars="false"
+            android:maxWidth="1dp"
+            android:theme="?attr/actionBarTheme"
+            app:buttonGravity="top|center_vertical"
+            app:contentInsetStartWithNavigation="20dp"
+            app:layout_constrainedHeight="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:maxButtonHeight="8dp"
+            app:navigationContentDescription="" />
+
+        <Button
+            android:id="@+id/btn_gologin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="8dp"
+            android:background="@android:color/transparent"
+            android:text="@string/gologin"
+            android:textAllCaps="false"
+            android:textColor="#737272"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_signup" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="160dp"
+            android:text="SIGN UP"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+            app:layout_constraintStart_toStartOf="@+id/toolbar"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.727" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

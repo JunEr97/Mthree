@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MobileApp_Assignment2</string>
+    <string name="gologin">Already have an account? Go to Login page.</string>
+    <string name="AgreeStatement">I agree to the Terms of Service and Privacy Policy.</string>
+    <string name="GoSignup">Don\'t have an account? Sign up here.</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+</resources>

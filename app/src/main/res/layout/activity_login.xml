@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+
+    tools:context=".Login">
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/transparent_bg_bordered_button"
+        android:text="Login"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_forgotpass" />
+
+    <Button
+        android:id="@+id/btn_gosignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="108dp"
+        android:background="@android:color/transparent"
+        android:text="@string/GoSignup"
+        android:textAllCaps="false"
+        android:textColor="#9cc450"
+        android:textSize="18sp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_login" />
+
+    <Button
+        android:id="@+id/btn_forgotpass"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="@android:color/transparent"
+        android:text="Forgot your password?"
+        android:textAllCaps="false"
+        android:textColor="#2a359c"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/etpass"
+        app:layout_constraintTop_toBottomOf="@+id/etpass" />
+
+    <vn.tiki.widgets.AutoCompleteEmailEditText
+        android:id="@+id/etloguser"
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="2dp"
+        android:ems="10"
+        android:hint="Enter Email"
+        android:textColor="@color/colorAccent"
+        android:inputType="textEmailAddress"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/etpass"
+        app:layout_constraintTop_toBottomOf="@+id/tv_logemail"
+        android:autofillHints=""
+        app:domains="@array/domains"/>
+
+    <EditText
+        android:id="@+id/etpass"
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="2dp"
+        android:ems="10"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/btn_login"
+        app:layout_constraintStart_toStartOf="@+id/btn_login"
+        app:layout_constraintTop_toBottomOf="@+id/tvpass"
+        android:autofillHints="" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:contentDescription="TODO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/tv_logemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="EMAIL           :"
+        android:textColor="#5c7234"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/etloguser"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/tvpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="PASSWORD :"
+        android:textColor="#5c7234"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/etpass"
+        app:layout_constraintTop_toBottomOf="@+id/etloguser" />
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="420dp"
+        android:layout_height="wrap_content"
+        android:background="#595959"
+        android:fadeScrollbars="false"
+        android:maxWidth="1dp"
+        android:theme="?attr/actionBarTheme"
+        app:buttonGravity="top|center_vertical"
+        app:contentInsetStartWithNavigation="20dp"
+        app:layout_constrainedHeight="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:maxButtonHeight="8dp"
+        app:navigationContentDescription="" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="168dp"
+        android:text="LOGIN"
+        android:textColor="@android:color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintStart_toStartOf="@+id/toolbar"
+        app:layout_constraintTop_toTopOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.727" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

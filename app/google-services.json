@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "583699134596",
+    "firebase_url": "https://file-management-app-12a8f.firebaseio.com",
+    "project_id": "file-management-app-12a8f",
+    "storage_bucket": "file-management-app-12a8f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:583699134596:android:42ce96762c048a0c0aaad1",
+        "android_client_info": {
+          "package_name": "com.example.mobileapp_assignment2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "583699134596-qaoldshj12sk9v4pc4cnj4d8qcvk3l54.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCiFzyul-NC24MVCYqKpBFi8LeRJV-_K58"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "583699134596-qaoldshj12sk9v4pc4cnj4d8qcvk3l54.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

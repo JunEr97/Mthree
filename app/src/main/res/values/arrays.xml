@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="domains">
+        <item>gmail.com</item>
+        <item>yahoo.com</item>
+        <item>hotmail.com</item>
+        <item>icloud.com</item>
+        <item>outlook.com</item>
+        <item>co.jp</item>
+        <item>tiki.vn</item>
+        <item>yopmail.com</item>
+        <item>student.newinti.edu.my</item>
+        <item></item>
+    </string-array>
+
+</resources>
