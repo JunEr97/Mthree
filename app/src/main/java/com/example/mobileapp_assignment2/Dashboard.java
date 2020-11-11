@@ -33,18 +33,14 @@ public class Dashboard extends AppCompatActivity implements NavigationView.OnNav
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()){
-            case R.id.nav_car:
+            case R.id.nav_project:
                 startActivity(new Intent(getApplicationContext(), Dashboard.class));
                 break;
-            case R.id.nav_settings:
-                //startActivity(new Intent(getApplicationContext(),Settings.class));
-
+            case R.id.nav_location:
+                //startActivity(new Intent(getApplicationContext(),Location.class));
                 break;
-            case R.id.nav_reserveparking:
-                //startActivity(new Intent(getApplicationContext(),ReserveParking.class));
-                break;
-            case R.id.nav_helpcenter:
-                //startActivity(new Intent(getApplicationContext(),HelpCenter.class));
+            case R.id.nav_edit_profile:
+                startActivity(new Intent(getApplicationContext(),EditProfile.class));
                 break;
             case R.id.nav_logout:
                 Toast.makeText(this, "Logged Out.", Toast.LENGTH_SHORT).show();

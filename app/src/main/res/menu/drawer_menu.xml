@@ -4,21 +4,17 @@
     tools:showIn="navigation_view">
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_car"
+            android:id="@+id/nav_edit_profile"
 
-            android:title="My Reservation" />
+            android:title="Edit Profile" />
         <item
-            android:id="@+id/nav_settings"
+            android:id="@+id/nav_project"
 
-            android:title="Settings" />
+            android:title="Project" />
         <item
-            android:id="@+id/nav_reserveparking"
+            android:id="@+id/nav_location"
 
-            android:title="Reserve Parking" />
-        <item
-            android:id="@+id/nav_helpcenter"
-
-            android:title="Help Center" />
+            android:title="Location" />
         <item
             android:id="@+id/nav_logout"
 
